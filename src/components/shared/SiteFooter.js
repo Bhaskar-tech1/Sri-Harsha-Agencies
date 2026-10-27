@@ -47,7 +47,7 @@ export default function SiteFooter() {
             <span>© {year} {siteConfig.name}. All rights reserved.</span>
             <span className="footer-developer">Developed by <a href="mailto:panjaabhishek57@gmail.com">Panja Abhishek</a> and <a href="mailto:bhaskarvanjarapu207@gmail.com">Bhaskar Vanjarapu</a>.</span>
           </div>
-          <span>Thoughtfully selected. Simply shared.</span>
+          <span>Trusted quality. Delivered fresh.</span>
         </div>
       </div>
     </footer>

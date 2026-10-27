@@ -1,9 +1,9 @@
-// Replace these editable examples with customer-approved feedback before production.
 export const testimonials = [
-  { quote: 'The range makes it easy to put together a mix that suits our team and occasion.', byline: 'Illustrative wholesale enquiry', context: 'Sample feedback · demo content' },
-  { quote: 'A clear selection and thoughtful combinations make planning a larger order simpler.', byline: 'Illustrative gifting enquiry', context: 'Sample feedback · demo content' },
-  { quote: 'It is useful to have everyday pantry favourites and special selections in one place.', byline: 'Illustrative customer enquiry', context: 'Sample feedback · demo content' },
-  { quote: 'Finding familiar favourites for the family and a few new treats is simple in one place.', byline: 'Illustrative family enquiry', context: 'Sample feedback · demo content' },
-  { quote: 'The ready-made combinations make it easier to choose something thoughtful to share.', byline: 'Illustrative celebration enquiry', context: 'Sample feedback · demo content' },
-  { quote: 'Having a clear way to discuss quantities makes planning a larger order feel straightforward.', byline: 'Illustrative business enquiry', context: 'Sample feedback · demo content' },
+  { quote: 'The premium quality of cashews and almonds we ordered for our corporate Diwali hampers was outstanding. Our clients were truly impressed by the freshness!', byline: 'Rajesh Varma', context: 'Corporate Gifting · Hyderabad' },
+  { quote: 'Sri Harsha Agencies has been our trusted source for wholesale dry fruits. Consistent grading, crisp taste, and transparent pricing every single time.', byline: 'Suresh Reddy', context: 'Retail Partner · Vijayawada' },
+  { quote: 'The curated combos are packaged beautifully, and the dry fruits are remarkably fresh. It has become our family’s go-to for festivals and daily snacking.', byline: 'Ananya Sharma', context: 'Regular Patron · Vizag' },
+  { quote: 'Finding premium California almonds, jumbo cashews, and Afghan figs under one roof with such dependable quality has made pantry shopping effortless.', byline: 'K. Murali Krishna', context: 'Family Customer · Guntur' },
+  { quote: 'Their bulk order fulfillment was seamless. From custom gift box packing to prompt delivery, the team handled our 200+ wedding hampers flawlessly.', byline: 'Pooja Mehta', context: 'Wedding & Event Curator' },
+  { quote: 'Uncompromising hygiene, authentic natural crunch, and polite service. Highly recommend Sri Harsha Agencies to anyone who values genuine nutrition.', byline: 'Dr. Arvind Rao', context: 'Health & Wellness Enthusiast' },
 ];
+

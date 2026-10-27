@@ -11,10 +11,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
 const slides = [
-  { kicker: 'A GOOD PLACE TO BEGIN', title: 'Goodness in every handful.', copy: 'A colourful mix of everyday favourites, ready to make their way to your table.', image: homeSliderImages[0], alt: 'Bowls of almonds, pistachios, cashews and dates on a dark tabletop', cta: 'Explore the collection', href: '/products', secondary: 'Shop dry fruits', secondaryHref: '/products?category=dry-fruits', position: '58% 52%' },
-  { kicker: 'SIMPLE PANTRY FAVOURITES', title: 'Make room for a little crunch.', copy: 'Browse seeds and snack essentials for the everyday moments in between.', image: homeSliderImages[1], alt: 'Ceramic bowls of pumpkin, sunflower, flax and mixed seeds beside honey', cta: 'Shop seeds', href: '/products?category=seeds', secondary: 'Browse all products', secondaryHref: '/products', position: '58% 50%' },
-  { kicker: 'SOMETHING TO SHARE', title: 'A sweet note for the table.', copy: 'Discover familiar laddus, snack-time favourites and curated combinations.', image: homeSliderImages[2], alt: 'Golden laddus and festive Indian sweets arranged on a serving platter', cta: 'Explore snacks', href: '/products?category=laddus-snacks', secondary: 'See our combos', secondaryHref: '/combos', position: '58% 52%' },
-  { kicker: 'FOR HOMES & BUSINESSES', title: 'A thoughtful mix, at your scale.', copy: 'Tell us what you are looking for and we will help you explore bulk options.', image: homeSliderImages[3], alt: 'An elegant unbranded gift box filled with assorted nuts and dried fruit', cta: 'Make a bulk enquiry', href: '/bulk-orders', secondary: 'Talk to our team', secondaryHref: '/contact', position: '60% 50%' },
+  { kicker: 'NATURE\'S FINEST SELECTION', title: 'Pure goodness, in every handful.', copy: 'A colourful mix of everyday favourites, ready to make their way to your table.', image: homeSliderImages[0], alt: 'Bowls of almonds, pistachios, cashews and dates on a dark tabletop', cta: 'Explore the collection', href: '/products', secondary: 'Shop dry fruits', secondaryHref: '/products?category=dry-fruits', position: '58% 52%' },
+  { kicker: 'HANDPICKED PANTRY ESSENTIALS', title: 'Make room for a little crunch.', copy: 'Browse seeds and snack essentials for the everyday moments in between.', image: homeSliderImages[1], alt: 'Ceramic bowls of pumpkin, sunflower, flax and mixed seeds beside honey', cta: 'Shop seeds', href: '/products?category=seeds', secondary: 'Browse all products', secondaryHref: '/products', position: '58% 50%' },
+  { kicker: 'CRAFTED FOR CELEBRATIONS', title: 'A sweet note for the table.', copy: 'Discover familiar laddus, snack-time favourites and curated combinations.', image: homeSliderImages[2], alt: 'Golden laddus and festive Indian sweets arranged on a serving platter', cta: 'Explore snacks', href: '/products?category=laddus-snacks', secondary: 'See our combos', secondaryHref: '/combos', position: '58% 52%' },
+  { kicker: 'SCALED FOR YOUR NEEDS', title: 'A thoughtful mix, at your scale.', copy: 'Tell us what you are looking for and we will help you explore bulk options.', image: homeSliderImages[3], alt: 'An elegant unbranded gift box filled with assorted nuts and dried fruit', cta: 'Make a bulk enquiry', href: '/bulk-orders', secondary: 'Talk to our team', secondaryHref: '/contact', position: '60% 50%' },
 ];
 
 export default function HeroSlider() {
@@ -40,7 +40,7 @@ export default function HeroSlider() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="hero-slider__note"><span>01</span><span>Small joys, thoughtfully gathered</span></div>
+      <div className="hero-slider__note"><span>01</span><span>Nature's finest, delivered to you</span></div>
     </section>
   );
 }

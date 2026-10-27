@@ -5,10 +5,10 @@ import { siteConfig } from '@/config/site';
 export const metadata = { title: 'Corporate & bulk orders' };
 
 const services = [
-  { title: 'Corporate gifting', description: 'Thoughtful gifts for teams and clients', icon: Gift },
-  { title: 'Wholesale supply', description: 'Pantry favourites in larger quantities', icon: Store },
-  { title: 'Custom packs', description: 'Curated mixes for your occasion', icon: Boxes },
-  { title: 'Bulk pricing', description: 'Good value for larger requirements', icon: BadgePercent },
+  { title: 'Corporate Gifting', description: 'Thoughtful luxury hampers & gourmet gift boxes for esteemed teams and clients', icon: Gift },
+  { title: 'Wholesale Supply', description: 'Direct commercial supply of premium nuts, seeds, and dry fruits in bulk volumes', icon: Store },
+  { title: 'Custom Packaging', description: 'Bespoke packing, custom assortments, and festive branding tailored for your event', icon: Boxes },
+  { title: 'Direct Wholesale Rates', description: 'Unbeatable source-direct bulk pricing with transparent tiered volume discounts', icon: BadgePercent },
 ];
 
 export default function BulkOrdersPage() {
@@ -17,9 +17,9 @@ export default function BulkOrdersPage() {
       <section className="bulk-orders-hero">
         <div className="bulk-orders-hero__shade" />
         <div className="bulk-orders-hero__content">
-          <span className="bulk-orders-hero__badge"><Building2 size={15} /> Premium partners</span>
+          <span className="bulk-orders-hero__badge"><Building2 size={15} /> Trusted Wholesale &amp; Gifting Partner</span>
           <h1>Corporate &amp; Bulk Orders</h1>
-          <p>Authentic Indian snacks and dry fruits for gifting, events and wholesale, prepared with care by {siteConfig.name}.</p>
+          <p>Premium grade dry fruits, gourmet nuts, and festive hampers curated for enterprise gifting, weddings, events, and commercial wholesale — delivered fresh by {siteConfig.name}.</p>
         </div>
       </section>
 
@@ -35,10 +35,10 @@ export default function BulkOrdersPage() {
 
       <section className="bulk-orders-enquiry container" aria-labelledby="bulk-enquiry-title">
         <div className="bulk-orders-enquiry__heading">
-          <p className="eyebrow">Plan something good</p>
-          <h2 id="bulk-enquiry-title">Tell us your requirement</h2>
+          <p className="eyebrow">Tailored Solutions</p>
+          <h2 id="bulk-enquiry-title">Request a Bulk Quote</h2>
           <span aria-hidden="true" />
-          <p>Share a few details and our team can help with the right products, quantity and packing.</p>
+          <p>Share your target quantities, required products, or event timeline — our dedicated team will provide custom packing recommendations and competitive wholesale pricing.</p>
         </div>
         <BulkEnquiryForm />
       </section>
