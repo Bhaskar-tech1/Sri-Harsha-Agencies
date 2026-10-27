@@ -17,6 +17,6 @@ Edit [`src/config/site.js`](src/config/site.js) to set the business WhatsApp num
 
 Product and combo examples, including demo prices and editable image sources, are centralized in [`src/data/products.js`](src/data/products.js). Category names and URL slugs live in [`src/data/categories.js`](src/data/categories.js). Replace the sample prices and the clearly labelled sample feedback before using the catalogue as a live offer.
 
-The original logo is served from `public/images/dishanth-logo.png`. Product and food photography currently uses Unsplash-hosted images; `next.config.js` permits that image host. Local assets can replace those URLs in the central data files when supplied.
+The original logo is served from `public/images/sri-harsha-logo.png`. Product and food photography currently uses Unsplash-hosted images; `next.config.js` permits that image host. Local assets can replace those URLs in the central data files when supplied.
 
 The cart is stored in browser localStorage. Enquiry and cart actions prepare a WhatsApp message for the customer to review and send; no backend or order submission service is connected in Phase 1.
