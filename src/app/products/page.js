@@ -18,14 +18,11 @@ export default async function ProductsPage({ searchParams }) {
 
   return (
     <>
-      <section className="page-intro page-intro--catalogue">
-        <div className="container page-intro__inner">
-          <div>
-            <p className="eyebrow">The {siteConfig.shortName} collection</p>
-            <h1>Explore our products</h1>
-            <p>Browse pantry favourites, easy snacks and thoughtful selections for sharing.</p>
-          </div>
-          <span className="page-intro__note"><span>01</span> A sample catalogue for preview</span>
+      <section className="page-hero page-hero--products">
+        <div className="container page-hero__content">
+          <p className="eyebrow">The {siteConfig.shortName} collection</p>
+          <h1>Explore our products</h1>
+          <p>Dry fruits, nuts, seeds, snacks and more for your home.</p>
         </div>
       </section>
       <section className="section section--catalogue">

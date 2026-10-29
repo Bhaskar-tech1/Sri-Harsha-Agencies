@@ -20,27 +20,24 @@ const slides = [
 export default function HeroSlider() {
   return (
     <section className="hero-slider" aria-label="Featured collections">
-      <Swiper modules={[Autoplay, Pagination, A11y, EffectFade, Keyboard]} effect="fade" fadeEffect={{ crossFade: true }} loop autoplay={{ delay: 6500, disableOnInteraction: false, pauseOnMouseEnter: true }} pagination={{ clickable: true }} speed={1200} keyboard={{ enabled: true, onlyInViewport: true }} a11y={{ enabled: true }}>
+      <Swiper modules={[Autoplay, Pagination, A11y, EffectFade, Keyboard]} effect="fade" fadeEffect={{ crossFade: true }} loop autoplay={{ delay: 2000, disableOnInteraction: false, pauseOnMouseEnter: false }} pagination={{ clickable: true }} speed={800} keyboard={{ enabled: true, onlyInViewport: true }} a11y={{ enabled: true }}>
         {slides.map((slide, index) => (
           <SwiperSlide key={slide.title}>
             <div className={`hero-slide ${index === 3 ? 'hero-slide--soft' : ''}`}>
               <Image className="hero-slide__image" src={slide.image} alt={slide.alt} fill priority={index === 0} sizes="100vw" style={{ objectPosition: slide.position }} />
               <div className="hero-slide__veil" />
               <div className="container hero-slide__content">
-                <p className="hero-kicker"><span />{slide.kicker}</p>
                 <h1>{slide.title}</h1>
                 <p className="hero-slide__copy">{slide.copy}</p>
                 <div className="hero-actions">
                   <Link className="button button--light" href={slide.href}>{slide.cta}<ArrowRight size={17} /></Link>
                   <Link className="button button--outline-light" href={slide.secondaryHref}>{slide.secondary}</Link>
                 </div>
-                <span className="hero-slide__index">0{index + 1} <i /> 0{slides.length}</span>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="hero-slider__note"><span>01</span><span>Nature's finest, delivered to you</span></div>
     </section>
   );
 }

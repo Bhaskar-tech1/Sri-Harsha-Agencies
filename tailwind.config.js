@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: { navy: '#1a3c34', orange: '#c8922a', green: '#367a3a', cream: '#faf7f0' },
+        brand: { navy: '#1a3c34', orange: '#c8922a', green: '#367a3a', cream: '#f7f6f2' },
       },
       fontFamily: {
         display: ['Playfair Display', 'Georgia', 'serif'],

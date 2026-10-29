@@ -41,18 +41,18 @@ export default function HomePage() {
               </div>
             </div>
             <div className="combo-feature__copy">
-              <p className="eyebrow">Four easy ways to share</p>
-              <h2>Your favourites, <em>already gathered.</em></h2>
-              <p>Explore ready-made mixes, from a ten-item dry fruit selection to honey, seeds and berry favourites. Find a little goodness for snack time, tiffin, gifting or travel.</p>
+              <p className="eyebrow">Ready-made combo packs</p>
+              <h2>More favourites, <em>in one pack.</em></h2>
+              <p>Each combo has a mix of dry fruits, seeds, honey or snacks. Pick one for your home, to share with family, or to give as a gift.</p>
               <div className="combo-picks" aria-label="Combo selections shown in the banner">
-                <div className="combo-pick"><span className="combo-pick__number">01</span><span><strong>Dry fruit mix</strong><small>Ten familiar favourites</small></span></div>
-                <div className="combo-pick"><span className="combo-pick__number">02</span><span><strong>Honey & pantry</strong><small>A sweet and savoury pairing</small></span></div>
-                <div className="combo-pick"><span className="combo-pick__number">03</span><span><strong>Seed selection</strong><small>Everyday seeds, together</small></span></div>
-                <div className="combo-pick"><span className="combo-pick__number">04</span><span><strong>Berry mix</strong><small>Fruit, seeds and a little treat</small></span></div>
+                <div className="combo-pick"><span className="combo-pick__number">01</span><span><strong>Dry fruit combo</strong><small>Almonds, cashews, raisins and more</small></span></div>
+                <div className="combo-pick"><span className="combo-pick__number">02</span><span><strong>Honey & snacks combo</strong><small>Sweet and tasty everyday items</small></span></div>
+                <div className="combo-pick"><span className="combo-pick__number">03</span><span><strong>Seeds combo</strong><small>Different seeds in one pack</small></span></div>
+                <div className="combo-pick"><span className="combo-pick__number">04</span><span><strong>Berries combo</strong><small>Berries and other sweet treats</small></span></div>
               </div>
               <div className="combo-feature__foot">
-                <Link href="/combos" className="button button--navy">Explore all combos <ArrowRight size={17} /></Link>
-                <span>Made for the moments you share</span>
+                <Link href="/combos" className="button button--navy">View all combos <ArrowRight size={17} /></Link>
+                <span>Easy to share with family and friends</span>
               </div>
             </div>
           </div>
