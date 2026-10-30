@@ -37,7 +37,7 @@ export default function HomePage() {
           <div className="combo-feature" data-aos="fade-up">
             <div className="combo-feature__photo combo-feature__photo--banner">
               <div className="combo-feature__banner-frame">
-                <Image src={productImages.comboBanner} alt="A curated assortment of dry fruits, seeds, honey and sweets for sharing" fill sizes="(max-width: 800px) 100vw, 50vw" />
+                <Image src={productImages.comboBanner} alt="A curated assortment of dry fruits, nuts, whole spices, seeds and laddus for sharing" fill sizes="(max-width: 800px) 100vw, 50vw" />
               </div>
             </div>
             <div className="combo-feature__copy">
@@ -48,7 +48,7 @@ export default function HomePage() {
                 <div className="combo-pick"><span className="combo-pick__number">01</span><span><strong>Dry fruit combo</strong><small>Almonds, cashews, raisins and more</small></span></div>
                 <div className="combo-pick"><span className="combo-pick__number">02</span><span><strong>Honey & snacks combo</strong><small>Sweet and tasty everyday items</small></span></div>
                 <div className="combo-pick"><span className="combo-pick__number">03</span><span><strong>Seeds combo</strong><small>Different seeds in one pack</small></span></div>
-                <div className="combo-pick"><span className="combo-pick__number">04</span><span><strong>Berries combo</strong><small>Berries and other sweet treats</small></span></div>
+                <div className="combo-pick"><span className="combo-pick__number">04</span><span><strong>Spices combo</strong><small>Whole spices and aromatic pantry staples</small></span></div>
               </div>
               <div className="combo-feature__foot">
                 <Link href="/combos" className="button button--navy">View all combos <ArrowRight size={17} /></Link>

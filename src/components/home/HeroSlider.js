@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import { homeSliderImages } from '@/data/images';
+import { homeSliderImages, homeSliderMobileImages } from '@/data/images';
 import { Autoplay, Pagination, A11y, EffectFade, Keyboard } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -11,27 +11,116 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
 const slides = [
-  { kicker: 'NATURE\'S FINEST SELECTION', title: 'Pure goodness, in every handful.', copy: 'A colourful mix of everyday favourites, ready to make their way to your table.', image: homeSliderImages[0], alt: 'Bowls of almonds, pistachios, cashews and dates on a dark tabletop', cta: 'Explore the collection', href: '/products', secondary: 'Shop dry fruits', secondaryHref: '/products?category=dry-fruits', position: '58% 52%' },
-  { kicker: 'HANDPICKED PANTRY ESSENTIALS', title: 'Make room for a little crunch.', copy: 'Browse seeds and snack essentials for the everyday moments in between.', image: homeSliderImages[1], alt: 'Ceramic bowls of pumpkin, sunflower, flax and mixed seeds beside honey', cta: 'Shop seeds', href: '/products?category=seeds', secondary: 'Browse all products', secondaryHref: '/products', position: '58% 50%' },
-  { kicker: 'CRAFTED FOR CELEBRATIONS', title: 'A sweet note for the table.', copy: 'Discover familiar laddus, snack-time favourites and curated combinations.', image: homeSliderImages[2], alt: 'Golden laddus and festive Indian sweets arranged on a serving platter', cta: 'Explore snacks', href: '/products?category=laddus-snacks', secondary: 'See our combos', secondaryHref: '/combos', position: '58% 52%' },
-  { kicker: 'SCALED FOR YOUR NEEDS', title: 'A thoughtful mix, at your scale.', copy: 'Tell us what you are looking for and we will help you explore bulk options.', image: homeSliderImages[3], alt: 'An elegant unbranded gift box filled with assorted nuts and dried fruit', cta: 'Make a bulk enquiry', href: '/bulk-orders', secondary: 'Talk to our team', secondaryHref: '/contact', position: '60% 50%' },
+  {
+    kicker: "NATURE'S FINEST SELECTION",
+    title: 'Pure goodness, in every handful.',
+    copy: 'A colourful mix of everyday favourites, ready to make their way to your table.',
+    image: homeSliderImages[0],
+    mobileImage: homeSliderMobileImages[0],
+    alt: 'Bowls of almonds, pistachios, cashews and dates on a dark tabletop',
+    cta: 'Explore the collection',
+    href: '/products',
+    secondary: 'Shop dry fruits',
+    secondaryHref: '/products?category=dry-fruits',
+    position: '58% 52%',
+  },
+  {
+    kicker: 'HANDPICKED PANTRY ESSENTIALS',
+    title: 'Make room for a little crunch.',
+    copy: 'Browse seeds and snack essentials for the everyday moments in between.',
+    image: homeSliderImages[1],
+    mobileImage: homeSliderMobileImages[1],
+    alt: 'Ceramic bowls of pumpkin, sunflower, flax and mixed seeds beside honey',
+    cta: 'Shop seeds',
+    href: '/products?category=seeds',
+    secondary: 'Browse all products',
+    secondaryHref: '/products',
+    position: '58% 50%',
+  },
+  {
+    kicker: 'AUTHENTIC WHOLE SPICES',
+    title: 'Pure aroma for every dish.',
+    copy: 'Discover handpicked whole spices, carefully sourced for rich fragrance and authentic taste.',
+    image: homeSliderImages[2],
+    mobileImage: homeSliderMobileImages[2],
+    alt: 'Aromatic whole spices like star anise, cinnamon quills, cardamom and cloves in antique brass bowls',
+    cta: 'Explore spices',
+    href: '/products?category=spices',
+    secondary: 'See our combos',
+    secondaryHref: '/combos',
+    position: '58% 52%',
+  },
+  {
+    kicker: 'THOUGHTFUL GIFTING',
+    title: 'A thoughtful mix, at your scale.',
+    copy: 'Tell us what you are looking for and we will help you explore bulk options.',
+    image: homeSliderImages[3],
+    mobileImage: homeSliderMobileImages[3],
+    alt: 'An elegant unbranded gift box filled with assorted nuts and dried fruit',
+    cta: 'Make a bulk enquiry',
+    href: '/bulk-orders',
+    secondary: 'Talk to our team',
+    secondaryHref: '/contact',
+    position: '60% 50%',
+  },
 ];
 
 export default function HeroSlider() {
   return (
     <section className="hero-slider" aria-label="Featured collections">
-      <Swiper modules={[Autoplay, Pagination, A11y, EffectFade, Keyboard]} effect="fade" fadeEffect={{ crossFade: true }} loop autoplay={{ delay: 2000, disableOnInteraction: false, pauseOnMouseEnter: false }} pagination={{ clickable: true }} speed={800} keyboard={{ enabled: true, onlyInViewport: true }} a11y={{ enabled: true }}>
+      <Swiper
+        modules={[Autoplay, Pagination, A11y, EffectFade, Keyboard]}
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
+        loop
+        autoplay={{ delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: false }}
+        pagination={{ clickable: true }}
+        speed={800}
+        keyboard={{ enabled: true, onlyInViewport: true }}
+        a11y={{ enabled: true }}
+      >
         {slides.map((slide, index) => (
           <SwiperSlide key={slide.title}>
             <div className={`hero-slide ${index === 3 ? 'hero-slide--soft' : ''}`}>
-              <Image className="hero-slide__image" src={slide.image} alt={slide.alt} fill priority={index === 0} sizes="100vw" style={{ objectPosition: slide.position }} />
+              {/* Desktop Screen Image */}
+              <Image
+                className="hero-slide__image hero-slide__image--desktop"
+                src={slide.image}
+                alt={slide.alt}
+                fill
+                priority={index === 0}
+                sizes="(max-width: 768px) 0vw, 100vw"
+                style={{ objectPosition: slide.position }}
+              />
+              {/* Mobile Screen Image */}
+              <Image
+                className="hero-slide__image hero-slide__image--mobile"
+                src={slide.mobileImage || slide.image}
+                alt={slide.alt}
+                fill
+                priority={index === 0}
+                sizes="(max-width: 768px) 100vw, 0vw"
+                style={{ objectPosition: 'center 25%' }}
+              />
               <div className="hero-slide__veil" />
               <div className="container hero-slide__content">
+                {slide.kicker && (
+                  <p className="hero-kicker">
+                    <span />
+                    {slide.kicker}
+                    <span />
+                  </p>
+                )}
                 <h1>{slide.title}</h1>
                 <p className="hero-slide__copy">{slide.copy}</p>
                 <div className="hero-actions">
-                  <Link className="button button--light" href={slide.href}>{slide.cta}<ArrowRight size={17} /></Link>
-                  <Link className="button button--outline-light" href={slide.secondaryHref}>{slide.secondary}</Link>
+                  <Link className="button button--light" href={slide.href}>
+                    {slide.cta}
+                    <ArrowRight size={17} />
+                  </Link>
+                  <Link className="button button--outline-light" href={slide.secondaryHref}>
+                    {slide.secondary}
+                  </Link>
                 </div>
               </div>
             </div>

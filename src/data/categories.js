@@ -7,12 +7,12 @@ export const categories = [
   { id: 'laddus-snacks', label: 'Laddus & Snacks', description: 'A familiar bite for sharing.', image: categoryImages.laddusSnacks, imageAlt: 'Indian dry fruit laddus made with dates, figs, nuts and seeds', tone: 'orange' },
   { id: 'honey-items', label: 'Honey Items', description: 'Golden pantry favourites.', image: categoryImages.honeyItems, imageAlt: 'Amber honey, honeycomb and a wooden honey dipper', tone: 'honey' },
   { id: 'dehydrated-fruits-veggies', label: 'Dehydrated Fruits & Veggies', description: 'Bright, easy-to-enjoy produce.', image: categoryImages.dehydratedProduce, imageAlt: 'Dried mango, banana chips, beetroot and carrot crisps', tone: 'mango' },
-  { id: 'berries', label: 'Berries', description: 'Naturally sweet berry favourites.', image: categoryImages.berries, imageAlt: 'Dried cranberries, blueberries and goji berries in a bowl', tone: 'rose' },
+  { id: 'spices', label: 'Spices', description: 'Aromatic, hand-picked whole spices.', image: categoryImages.spices, imageAlt: 'Aromatic whole spices like star anise, cloves, cardamom and cinnamon in a bowl', tone: 'warm' },
 ];
 
 export const homeCategories = [
   ...categories,
-  { id: 'combos', label: 'Combos', description: 'Curated selections, together.', image: categoryImages.combos, imageAlt: 'A curated assortment of nuts, dried fruits, seeds, berries and honey', tone: 'navy', href: '/combos' },
+  { id: 'combos', label: 'Combos', description: 'Curated selections, together.', image: categoryImages.combos, imageAlt: 'A curated assortment of nuts, dried fruits, seeds, spices and honey', tone: 'navy', href: '/combos' },
 ];
 
 export const categoryById = Object.fromEntries(categories.map((category) => [category.id, category]));

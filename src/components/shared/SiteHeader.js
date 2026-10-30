@@ -36,7 +36,7 @@ export default function SiteHeader() {
 
   return (
     <>
-      <div className="announcement"><span className="announcement__dot" />{siteConfig.announcement}<Link href="/bulk-orders">Enquire for bulk orders <span aria-hidden="true">→</span></Link></div>
+      <div className="announcement">{siteConfig.announcement}</div>
       <header className={`site-header ${open ? 'is-open' : ''}`}>
         <div className="container site-header__inner">
           <Link href="/" className="brand" aria-label={`${siteConfig.name} home`} onClick={close}>

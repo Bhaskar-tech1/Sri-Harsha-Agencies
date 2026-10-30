@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Package, PackageOpen, X, RotateCw, PackageX, Pencil, Trash2 } from 'lucide-react';
+import { LayoutGrid, Package, Boxes, PackageOpen, X, RotateCw, PackageX, Pencil, Trash2 } from 'lucide-react';
 import { formatCurrency } from '@/lib/pricing';
 
 export default function AdminDashboardPage() {
@@ -251,15 +251,30 @@ export default function AdminDashboardPage() {
         {/* 3 Metric Summary Cards matching Image 2 */}
         <section className="admin-stats-grid">
           <div className="admin-stat-card">
-            <span className="admin-stat-label">Total</span>
+            <div className="admin-stat-header">
+              <span className="admin-stat-icon admin-stat-icon--total">
+                <LayoutGrid size={18} strokeWidth={2.2} />
+              </span>
+              <span className="admin-stat-label">Total</span>
+            </div>
             <span className="admin-stat-value">{totalCount}</span>
           </div>
           <div className="admin-stat-card">
-            <span className="admin-stat-label">Products</span>
+            <div className="admin-stat-header">
+              <span className="admin-stat-icon admin-stat-icon--products">
+                <Package size={18} strokeWidth={2.2} />
+              </span>
+              <span className="admin-stat-label">Products</span>
+            </div>
             <span className="admin-stat-value">{productCount}</span>
           </div>
           <div className="admin-stat-card">
-            <span className="admin-stat-label">Combos</span>
+            <div className="admin-stat-header">
+              <span className="admin-stat-icon admin-stat-icon--combos">
+                <Boxes size={18} strokeWidth={2.2} />
+              </span>
+              <span className="admin-stat-label">Combos</span>
+            </div>
             <span className="admin-stat-value">{comboCount}</span>
           </div>
         </section>

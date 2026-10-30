@@ -5,10 +5,17 @@ export const heroImages = [
 ];
 
 export const homeSliderImages = [
-  '/images/home-hero-01.webp',
-  '/images/home-hero-02.webp',
-  '/images/home-hero-03.webp',
-  '/images/home-hero-04.webp',
+  '/images/home-hero-desktop-01.webp',
+  '/images/home-hero-desktop-02.webp',
+  '/images/home-hero-desktop-03.webp',
+  '/images/home-hero-desktop-04.webp',
+];
+
+export const homeSliderMobileImages = [
+  '/images/home-hero-mobile-01.webp',
+  '/images/home-hero-mobile-02.webp',
+  '/images/home-hero-mobile-03.webp',
+  '/images/home-hero-mobile-04.webp',
 ];
 
 export const categoryImages = {
@@ -18,7 +25,8 @@ export const categoryImages = {
   laddusSnacks: '/images/category-laddus-snacks.webp',
   honeyItems: '/images/category-honey-items.webp',
   dehydratedProduce: '/images/category-dehydrated-produce.webp',
-  berries: '/images/category-berries.webp',
+  spices: '/images/category-spices.webp',
+  berries: '/images/category-spices.webp',
   combos: '/images/category-combos.webp',
 };
 

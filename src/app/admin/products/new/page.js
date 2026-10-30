@@ -12,7 +12,7 @@ const CATEGORIES = [
   { id: 'laddus-snacks', label: 'Laddus & Snacks' },
   { id: 'honey-items', label: 'Honey Items' },
   { id: 'dehydrated-fruits-veggies', label: 'Dehydrated Fruits & Veggies' },
-  { id: 'berries', label: 'Berries' },
+  { id: 'spices', label: 'Spices' },
 ];
 
 export default function AddProductPage() {
